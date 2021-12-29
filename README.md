@@ -36,7 +36,7 @@ Desktop view @ 1920 x 927
 ### Links
 
 - Solution URL: [Github](https://github.com/intherightdirection/nft-card)
-- Live Site URL: [Github Pages](https://your-live-site-url.com)
+- Live Site URL: [Github Pages](https://intherightdirection.github.io/nft-card/)
 
 ### Built with
 
