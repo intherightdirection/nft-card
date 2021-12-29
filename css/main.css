@@ -14,8 +14,9 @@ html {
 body {
   display: flex;
   flex-flow: column;
+  align-items: center;
   justify-content: center;
-  /* align-items: center; */
+  margin: 11.6vh 0;
   background: hsl(217, 54%, 11%);
   font-family: 'Outfit', sans-serif;
 }
@@ -43,6 +44,7 @@ h2 {
 }
 
 p {
+  font-size: 0.89rem;
   line-height: 1.5;
   font-weight: 300;
 }
@@ -57,48 +59,66 @@ img {
 
 /* Main Content */
 
-.wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
 .card {
   display: flex;
   flex-flow: column;
-  justify-content: space-around;
-  width: 86.935%;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 87.2%;
   max-width: 19.39em;
+  min-height: 30.17rem;
   margin-bottom: 1.5em;
+  padding: .5em 0;
   background: hsl(216, 50%, 16%);
   border-radius: 12px;
+  box-shadow: -6px 6px 31px 31px hsl(225, 54%, 11%);
 }
 
 .hero {
+  position: relative;
   width: 85.9%;
-  margin: 1.33em 0 1.33em 1.125em;
 }
 
-.hero img {
+.hero figure img {
   border-radius: 12px;
 }
 
+.overlay {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 98.525%;
+  background-color: hsla(178, 100%, 50%, .5);
+  border-radius: 10px;
+  opacity: 0;
+}
+
+.overlay img {
+  width: 2.5rem;
+}
+
+.overlay:hover {
+  opacity: 1;
+}
+
 .description {
-  width: 89.5%;
-  margin: 0 0 1.38em 1.125em;
+  width: 85.9%;
 }
 
 .description h1 {
   margin-bottom: 0.81rem;
 }
 
+.description h1:hover {
+  color: hsl(178, 100%, 50%);
+}
+
 .additional {
-  /* display: flex;
-  flex-flow: column nowrap;
-  justify-content: space-between; */
-  width: 84.89%;
-  margin: 0 0 1.33em 1.25em;
+  width: 85.9%;
 }
 
 .purchase-info {
@@ -156,6 +176,10 @@ img {
   color: white;
 }
 
+.creator span:hover {
+  color: hsl(178, 100%, 50%);
+}
+
 /* ==========================================================================
    Attribution
    ========================================================================== */
@@ -170,4 +194,13 @@ img {
   color: hsl(228, 45%, 44%);
 }
 
-@media screen and (min-width) {}
+@media screen and (min-width: 768px) {
+
+  .card {
+    min-height: 33.06em;
+  }
+
+  .description p {
+    font-size: 1rem;
+  }
+}
